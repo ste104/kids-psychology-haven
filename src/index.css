@@ -24,7 +24,7 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(109.6deg, rgba(223,234,247,1) 11.2%, rgba(244,248,252,1) 91.1%);
+  background: linear-gradient(109.6deg, rgba(223,234,247,0.2) 11.2%, rgba(244,248,252,0.2) 91.1%);
 }
 
 .service-card {
@@ -44,5 +44,19 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+.rainbow-text {
+  background: linear-gradient(to right, #FFDEE2, #FEC6A1, #FEF7CD, #F2FCE2, #D3E4FD, #E5DEFF);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: rainbow 6s linear infinite;
+}
+
+@keyframes rainbow {
+  to {
+    background-position: 200% center;
   }
 }
